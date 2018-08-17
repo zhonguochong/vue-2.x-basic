@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript" src = "scripts/vue.min.js"></script>
+    <script type = "text/javascript" src = "scripts/vue-router.js"></script>
+    <title>Vue Router Example</title>
+</head>
+<body>
+
+<div id = "app">
+    <h1>Routing Example</h1>
+    <p>
+        <router-link to = "/route1">Router Link 1</router-link>
+        <router-link to = "/route2">Router Link 2</router-link>
+    </p>
+    <!-- route outlet -->
+    <!-- component matched by the route will render here -->
+    <router-view></router-view>
+</div>
+
+
+    <script type = "text/javascript" src = "scripts/vue_router_example.js"></script>
+
+</body>
+</html>

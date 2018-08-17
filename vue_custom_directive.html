@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript" src = "scripts/vue.min.js"></script>
+    <title>Vue Custom Directive</title>
+</head>
+<body>
+
+<div id = "databinding">
+    <div v-changestyle>VueJS Directive</div>
+</div>
+
+<div id = "filter">
+    <input  v-model = "name" placeholder = "Enter Name" /><br/>
+    <span style = "font-size:25px;"><b>Letter count is : {{name | countletters}}</b></span>
+</div>
+
+
+
+<script type = "text/javascript" src = "scripts/vue_custom_directive.js"></script>
+
+</body>
+</html>

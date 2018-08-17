@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript" src = "scripts/vue.min.js"></script>
+    <title>Vue Binding</title>
+
+    <style>
+        .active {
+            background: red;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id = "databinding">
+    {{title}}<br/>
+    <a href = "hreflink" target = "_blank"> Click Me </a> <br/>
+    <a href = "{{hreflink}}" target = "_blank">Click Me </a>  <br/>
+    <a v-bind:href = "hreflink" target = "_blank">Click Me </a>   <br/>
+</div>
+
+<div id = "classbinding">
+    <div v-bind:class = "{active:isactive}"><b>{{title}}</b></div>
+</div>
+
+
+<div id = "inlineStyle">
+    <div v-bind:style = "{ color: activeColor, fontSize: fontSize + 'px' }">{{title}}</div>
+</div>
+
+<div id = "inlineStyle2">
+    <div v-bind:style = "styleobj">{{title}}</div>
+</div>
+
+
+<script type = "text/javascript" src = "scripts/vue_binding.js"></script>
+
+</body>
+</html>

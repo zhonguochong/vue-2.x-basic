@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript" src = "scripts/vue.min.js"></script>
+    <title>Vue Components</title>
+</head>
+<body>
+
+<div id = "component_test">
+    <testcomponent></testcomponent>
+</div>
+<div id = "component_test1">
+    <testcomponent></testcomponent>
+</div>
+
+<div id = "local_component">
+    <local_comp></local_comp>
+</div>
+
+<div id = "vm3">
+    <name_comp></name_comp>
+</div>
+
+<div id = "databinding">
+    <component v-bind:is = "view"></component>
+</div>
+
+<script type = "text/javascript" src = "scripts/vue_component.js"></script>
+
+</body>
+</html>

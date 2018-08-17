@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript" src = "scripts/vue.min.js"></script>
+    <title>Vue Template</title>
+</head>
+<body>
+
+<div id="Person">
+
+    <h1>Firstname: {{first_name}}</h1>
+    <h1>Lastname: {{last_name}}</h1>
+    <div v-html="htmlcontent"></div>
+    <img v-bind:src = "imgsrc" width = "300" height = "250" />
+</div>
+
+<script type = "text/javascript" src = "scripts/vue_template.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script type = "text/javascript" src = "scripts/vue.min.js"></script>
+    <title>Vue Transition</title>
+
+    <style>
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 2s
+        }
+        .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+            opacity: 0
+        }
+    </style>
+
+</head>
+<body>
+
+<div id = "databinding">
+    <button v-on:click = "show = !show">Click Me</button>
+    <transition name = "fade">
+        <p v-show = "show" v-bind:style = "styleobj">Animation Example</p>
+    </transition>
+</div>
+
+
+<script type = "text/javascript" src = "scripts/vue_transition.js"></script>
+
+</body>
+</html>
